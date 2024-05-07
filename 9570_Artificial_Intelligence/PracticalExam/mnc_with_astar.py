@@ -19,7 +19,7 @@ def next_states(state):
     m_left, c_left, b_pos, m_right, c_right = state
     if b_pos == "left":
         moves=[(2,0),(0,2),(1,1),(1,0),(0,1)]
-        #This is basically 2 Ms 0 Cs -> So it represents boat mai kitne log aur kon kon jaah raha hai
+        
         next_states = [(m_left-m, c_left-c, 'right', m_right+m, c_right+c) for m, c in moves]
 
     else:
